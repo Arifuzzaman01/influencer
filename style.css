@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Public style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-p: #3a3a3a;
+  --color-s: #;
+}
+body {
+  margin: 50px 80px;
+}
+
+/* header area */
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  margin-top: 5px;
+}
+ul li {
+  list-style: none;
+  margin-top: 8px;
+  a {
+    text-decoration: none;
+    color: var(--color-p);
+  }
+}
+#menu {
+  display: none;
+  img {
+    cursor: pointer;
+  }
+}
+/* Hero area */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+  margin-top: 40px;
+}
+.hero .journey {
+  width: 500px;
+  height: 240px;
+  h1 {
+    font-size: 2.6rem;
+    color: var(--color-p);
+    font-weight: 700;
+  }
+}
+
+.hero .image {
+  width: 400px;
+  height: auto;
+  background-image: url(images/Circle\ design.svg);
+  background-position: center;
+  background-size: cover;
+}
+.btn-primary {
+  margin-top: 20px;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: none;
+}
+
+/* Main section area */
+/* companies */
+/* response for Mobile */
+@media screen and (max-width: 576px) {
+  body {
+    margin: 40px 20px;
+  }
+  nav ul li {
+    display: none;
+  }
+  #menu {
+    display: inline;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .image {
+    width: 100%;
+    
+  }
+  .hero .image img{
+    width: 100%;
+  }
+  .hero .journey {
+    width: 100%;
+    margin: 0 ;
+    height: auto;
+    h1{
+      font-size: 1.6rem;
+    }
+    p{
+      text-align: justify;
+    }
+  }
+  #companies{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hide{
+  display: none;
+}
