@@ -64,11 +64,10 @@ ul li {
 }
 
 .hero .image {
-  
   background-image: url(images/Circle\ design.svg);
   background-position: center;
   background-size: cover;
-  img{
+  img {
     width: 100%;
   }
 }
@@ -84,13 +83,31 @@ ul li {
 /* Main section area */
 /* companies */
 
-#sponsor{
+#sponsor {
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
   gap: 10px;
   flex-wrap: wrap;
 }
+/* Cards */
+#cards .container {
+  margin: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  box-shadow: #3a3a3a;
+}
+
+#cards .card h1 {
+  color: #18191f;
+  font-size: 1.8rem;
+}
+#cards .card p {
+  color: #787885;
+  font-weight: 700px;
+}
+
 /* response for Mobile */
 @media screen and (max-width: 576px) {
   body {
@@ -110,27 +127,25 @@ ul li {
     display: flex;
     justify-content: center;
   }
-  .hero .image img{
+  .hero .image img {
     width: 70%;
   }
   .hero .journey {
     width: 100%;
-    margin: 0 ;
+    margin: 0;
     height: auto;
-    h1{
+    h1 {
       font-size: 1.6rem;
     }
-    p{
+    p {
       text-align: justify;
     }
   }
-  #sponsor{
+  #sponsor {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
   }
-  
 }
-
