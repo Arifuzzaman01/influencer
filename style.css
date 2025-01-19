@@ -92,7 +92,7 @@ ul li {
 }
 /* Cards */
 #cards .container {
-  margin: 70px 0;
+  margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -109,6 +109,18 @@ ul li {
 #cards .card p {
   color: #787885;
   font-weight: 700px;
+}
+.arrow{
+  display: flex;
+  justify-content: flex-end;
+}
+.arrow button {
+  color: rgba(224, 44, 109, 0.87);
+  background: transparent;
+  border: none;
+ i{
+  padding-left: 5px;
+ }
 }
 
 /* response for Mobile */
@@ -166,7 +178,7 @@ ul li {
   body {
     margin: 40px;
   }
-  main{
+  main {
     margin: 0;
     padding: 0;
   }
@@ -190,8 +202,7 @@ ul li {
   .card .image img {
     width: 100%;
   }
-  .card-last{
+  .card-last {
     display: none;
   }
-  
 }
