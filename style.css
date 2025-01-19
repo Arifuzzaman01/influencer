@@ -98,6 +98,9 @@ ul li {
   gap: 20px;
   box-shadow: #3a3a3a;
 }
+.card {
+  margin-bottom: 30px;
+}
 
 #cards .card h1 {
   color: #18191f;
@@ -148,4 +151,47 @@ ul li {
     flex-wrap: wrap;
     gap: 10px;
   }
+  /* Cards section */
+  #cards .container {
+    grid-template-columns: 1fr;
+  }
+  .card .image img {
+    width: 100%;
+  }
+}
+
+/* responsive for tablet device */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  body {
+    margin: 40px;
+  }
+  main{
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: none;
+  }
+  #menu {
+    display: inline;
+  }
+  #sponsor {
+    flex-wrap: wrap;
+  }
+  #card {
+    width: 100vw;
+  }
+  #cards .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card .image img {
+    width: 100%;
+  }
+  .card-last{
+    display: none;
+  }
+  
 }
