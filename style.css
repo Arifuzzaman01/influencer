@@ -95,13 +95,15 @@ ul li {
   margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  box-shadow: #3a3a3a;
+  gap: 30px;
 }
 .card {
   margin-bottom: 30px;
+  box-shadow: 5px 0px 50px 10px #f0e8e8;
 }
-
+#cards .card .image img {
+  width: 100%;
+}
 #cards .card h1 {
   color: #18191f;
   font-size: 1.8rem;
@@ -110,7 +112,7 @@ ul li {
   color: #787885;
   font-weight: 700px;
 }
-.arrow{
+.arrow {
   display: flex;
   justify-content: flex-end;
 }
@@ -118,9 +120,9 @@ ul li {
   color: rgba(224, 44, 109, 0.87);
   background: transparent;
   border: none;
- i{
-  padding-left: 5px;
- }
+  i {
+    padding-left: 5px;
+  }
 }
 
 /* response for Mobile */
